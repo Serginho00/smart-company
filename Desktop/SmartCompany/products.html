@@ -1,97 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Smart Company Bolivia</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/iconoSC.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container px-5">
-                   <a class="navbar-brand fw-bold" href="index.html">SMART COMPANY BOLIVIA</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Articulos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Page Content-->
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Our Work</h1>
-                        <p class="lead fw-normal text-muted mb-0">Company portfolio</p>
-                    </div>
-                    <div class="row gx-5">
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-5 mb-lg-0">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                    <a class="btn btn-lg btn-primary" href="#!">Contact us</a>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Smart Company Bolivia ofrece soluciones y productos eléctricos industriales con altos estándares de seguridad y eficiencia." />
+    <meta name="author" content="Smart Company Bolivia" />
+    <title>Productos | Smart Company Bolivia</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/iconoSC.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Core theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- AOS Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+.hero-section {
+    position: relative;
+    height: 40vh;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+</style>
+</head>
+
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand modern-logo" href="index.html">
+                   <span class="logo-smart">SMART</span>
+                   <span class="logo-company">COMPANY</span>
+                   <span class="logo-bolivia">BOLIVIA</span>
+                     </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link active" href="products.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Artículos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+
+                                    <!-- BOTÓN DARK MODE -->
+    <li class="nav-item ms-3">
+        <button onclick="toggleDarkMode()" class="btn btn-outline-light btn-sm dark-toggle">
+            <i class="bi bi-moon"></i>
+        </button>
+    </li>
+        </ul>
+       </div>
+     </div>
+</nav>
+
+<!-- HERO PRODUCTOS -->
+<section class="hero-section"
+         style="background: url('assets/img/productos.jpg') center center/cover no-repeat;">
+    <div class="container" data-aos="fade-up">
+        <h1 class="fw-bold">Nuestros Productos</h1>
+        <p class="lead">Tecnología y equipamiento eléctrico de alta calidad</p>
+    </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section class="py-5 bg-light" id="productos">
+    <div class="container px-5 my-5">
+
+        <div class="row gx-5 gy-5">
+
+            <!-- Producto -->
+               <div class="col-lg-6" data-aos="fade-up" data-aos-delay="450">
+                <div class="card shadow-sm border-0 h-100 product-card">
+                    <img class="card-img-top img-fluid" src="assets/img/cajas.png" alt="Cableado estructurado">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Cajas Modulares y Autoportantes</h4>
+                        <a href="https://wa.me/59178494985?text=Hola,%20quiero%20cotizar%20cajas%20modulares"
+                        class="btn btn-success mt-3 w-100"  target="_blank">
+                        <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                <div class="card shadow-sm border-0 h-100 product-card">
+                    <img class="card-img-top img-fluid" src="assets/img/interruptores.jpg" alt="Transformadores eléctricos">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Interruptores Automáticos</h4>
+                        <a href="https://wa.me/59178494985?text=Hola,%20quiero%20cotizar%20interruptores%20automáticos"
+                        class="btn btn-success mt-3 w-100"  target="_blank">
+                        <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card shadow-sm border-0 h-100 product-card">
+                    <img class="card-img-top img-fluid" src="assets/img/guardamotor.jpg" alt="Iluminación industrial">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Control y Protección de Motores</h4>
+                        <a href="https://wa.me/59178494985?text=Hola,%20quiero%20cotizar%20protección%20para%20motores"
+                        class="btn btn-success mt-3 w-100"  target="_blank">
+                        <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        
+          
+               <div class="col-lg-6" data-aos="fade-up">
+                <div class="card shadow-sm border-0 h-100 product-card">
+                    <img class="card-img-top img-fluid" src="assets/img/medidor.jpg" alt="Tableros eléctricos industriales">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Medidores de Energía</h4>
+                       <a href="https://wa.me/59178494985?text=Hola,%20quiero%20cotizar%20medidores"
+                        class="btn btn-success mt-3 w-100"  target="_blank">
+                        <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card shadow-sm border-0 h-100 product-card">
+                    <img class="card-img-top img-fluid" src="assets/img/SS.jpg" alt="Iluminación industrial">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Arrancadores Suaves</h4>
+                        <a href="https://wa.me/59178494985?text=Hola,%20quiero%20cotizar%20Arrancadores"
+                        class="btn btn-success mt-3 w-100"  target="_blank">
+                        <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="450">
+                <div class="card shadow-sm border-0 h-100 product-card">
+                    <img class="card-img-top img-fluid" src="assets/img/variador.jpg" alt="Cableado estructurado">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Variadores de Frecuencia</h4>
+                       <a href="https://wa.me/59178494985?text=Hola,%20quiero%20cotizar%20variadores"
+                        class="btn btn-success mt-3 w-100"  target="_blank">
+                        <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="450">
+                <div class="card shadow-sm border-0 h-100 product-card">
+                    <img class="card-img-top img-fluid" src="assets/img/cables-electricos.jpg" alt="Cableado estructurado">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Cables</h4>
+                        <a href="https://wa.me/59178494985?text=Hola,%20quiero%20cotizar%20cables"
+                        class="btn btn-success mt-3 w-100"  target="_blank">
+                        <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="450">
+                <div class="card shadow-sm border-0 h-100 product-card">
+                    <img class="card-img-top img-fluid" src="assets/img/boroneras.jpg" alt="Cableado estructurado">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Botoneras y Accesorios</h4>
+                        <a href="https://wa.me/59178494985?text=Hola,%20quiero%20cotizar%20accesorios"
+                        class="btn btn-success mt-3 w-100"  target="_blank">
+                        <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>
+
+</main>
+
+ <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">
+                    © 2026 Smart Company Bolivia. Todos los derechos reservados.
+                </div>
+            </div>
+            <div class="col-auto">
+                <a class="link-light small" href="#">Privacidad</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#">Términos</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="contact.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+</script>
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<a href="https://wa.me/59170000000?text=Hola%20Smart%20Company%20Bolivia,%20quisiera%20información."
+   class="whatsapp-float"
+   target="_blank">
+   <i class="bi bi-whatsapp"></i>
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    color: white;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37,211,102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102, 0); }
+}
+</style>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    // Guardar preferencia
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+// Mantener modo al recargar
+window.onload = function() {
+    if(localStorage.getItem("theme") === "dark"){
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
+</body>
 </html>

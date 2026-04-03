@@ -1,24 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Smart Company Bolivia</title>
+        <title>Blog | Smart Company Bolivia</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/iconoSC.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-    </head>
+        <!-- AOS Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <style>
+.hero-section {
+    position: relative;
+    height: 40vh;           /* Altura uniforme */
+    min-height: 450px;      /* Altura mínima */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+</style>    
+</head>
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand fw-bold" href="index.html">SMART COMPANY BOLIVIA</a>
+                   <a class="navbar-brand modern-logo" href="index.html">
+                   <span class="logo-smart">SMART</span>
+                   <span class="logo-company">COMPANY</span>
+                   <span class="logo-bolivia">BOLIVIA</span>
+                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -26,14 +58,31 @@
                             <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li>
                             <li class="nav-item"><a class="nav-link" href="services.html">Proyectos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Articulos</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="blog.html">Articulos</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+
+                            <!-- BOTÓN DARK MODE -->
+    <li class="nav-item ms-3">
+        <button onclick="toggleDarkMode()" class="btn btn-outline-light btn-sm dark-toggle">
+            <i class="bi bi-moon"></i>
+        </button>
+    </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+ 
+
+            <!-- HERO -->
+<section class="hero-section" 
+         style="background: url('assets/img/blog.jpg') center center/cover no-repeat;">
+    <div class="container" data-aos="fade-up">
+        <h1 class="fw-bold">Blog & Artículos</h1>
+        <p class="lead">Noticias, proyectos y novedades de Smart Company Bolivia</p>
+    </div>
+</section>
             <!-- Page Content-->
-            <section class="py-5">
+            <section class="py-5 bg-light" id="nosotros">
                 <div class="container px-5">
                     <h1 class="fw-bolder fs-5 mb-4">Company Blog</h1>
                     <div class="card border-0 shadow rounded-3 overflow-hidden">
@@ -187,22 +236,95 @@
         </main>
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
-                    </div>
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">
+                    © 2026 Smart Company Bolivia. Todos los derechos reservados.
                 </div>
             </div>
-        </footer>
+            <div class="col-auto">
+                <a class="link-light small" href="#">Privacidad</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#">Términos</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="contact.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+</footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!-- BOTÓN FLOTANTE WHATSAPP -->
+<a href="https://wa.me/59170000000?text=Hola%20Smart%20Company%20Bolivia,%20quisiera%20información."
+   class="whatsapp-float"
+   target="_blank">
+   <i class="bi bi-whatsapp"></i>
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    color: white;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37,211,102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102, 0); }
+}
+</style>
+<!-- AOS Animations -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+    
+</script>
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    // Guardar preferencia
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+// Mantener modo al recargar
+window.onload = function() {
+    if(localStorage.getItem("theme") === "dark"){
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
     </body>
 </html>

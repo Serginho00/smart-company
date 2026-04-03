@@ -1,9 +1,9 @@
- VC<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
+        <meta name="description" content="Smart Company Bolivia ofrece soluciones de ingeniería eléctrica, automatización industrial y comercialización de material eléctrico con altos estándares de seguridad y eficiencia." />
         <meta name="author" content="" />
         <title>Smart Company Bolivia</title>
         <!-- Favicon-->
@@ -12,127 +12,255 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand fw-bold" href="index.html">SMART COMPANY BOLIVIA</a>
+                    <a class="navbar-brand modern-logo" href="index.html">
+                   <span class="logo-smart">SMART</span>
+                   <span class="logo-company">COMPANY</span>
+                   <span class="logo-bolivia">BOLIVIA</span>
+                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li>
                             <li class="nav-item"><a class="nav-link" href="services.html">Proyectos</a></li>
                             <li class="nav-item"><a class="nav-link" href="blog.html">Articulos</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                            <!-- BOTÓN DARK MODE -->
+    <li class="nav-item ms-3">
+        <button onclick="toggleDarkMode()" class="btn btn-outline-light btn-sm dark-toggle">
+            <i class="bi bi-moon"></i>
+        </button>
+    </li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Header-->
-             <!-- Header -->
-             <!-- Header -->
-<header class="hero-section d-flex align-items-center">
+           <header class="hero-section d-flex align-items-center justify-content-center text-center">
+
     <div class="container px-5">
-        <div class="row gx-5 align-items-center">
-            <!-- Texto -->
-            <div class="col-lg-6">
-                <div class="my-5 text-center text-lg-start">
-                    <h1 class="display-5 fw-bolder text-white mb-3">
-                        Soluciones de Ingeniería Eléctrica y Material Eléctrico en General
-                    </h1>
-                    <p class="lead fw-normal text-white-50 mb-4">
-                        Brindamos servicios eléctricos especializados, automatización industrial
-                        y comercialización de materiales eléctricos en Cochabamba – Bolivia.
-                        Impulsamos energía inteligente para el futuro.
-                    </p>
-                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-lg-start">
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="services.html">
-                            Nuestros Servicios
-                        </a>
-                        <a class="btn btn-outline-light btn-lg px-4" href="contact.html">
-                            Contactar
-                        </a>
+        <div class="row justify-content-center">
+            
+            <div class="col-lg-8">
+                <div class="hero-content text-white">
+
+                    <h1 id="heroTitle" class="hero-title mb-4"></h1>
+
+                    <p id="heroText" class="hero-text mb-4"></p>
+
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a id="heroBtn1" class="btn btn-primary btn-lg px-4"></a>
+                        <a id="heroBtn2" class="btn btn-outline-light btn-lg px-4"></a>
                     </div>
+
                 </div>
             </div>
-            <!-- Imagen -->
-            <div class="col-lg-6 text-center">
-           <img class="img-fluid rounded-3 shadow-lg"
-               src="assets/img/smart-company.png"
-              alt="Instalaciones eléctricas industriales">
-            </div>
+
         </div>
     </div>
+
 </header>
-            <!-- Features section-->
-            <section class="py-5" id="features">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Nuestros servicios de ingeniería son:</h2></div>
-                        <div class="col-lg-8">
-                            <div class="row gx-5 row-cols-1 row-cols-md-2">
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                                    <h2 class="h5">Tableros de Distribución</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                                    <h2 class="h5">Tableros de Arranque de Motores</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col mb-5 mb-md-0 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Tablero de trasferencia automática ATS</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Tableros de control de motores</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                                    <h2 class="h5">Tableros de Banco de Capacitores</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                                    <h2 class="h5">Instaleción y Puesta en marcha de Variadores de Frecuencia</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col mb-5 mb-md-0 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Instaleción y Puesta en marcha de Medidores de Energía</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Instalaciones Eléctricas en General</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            
+             <!-- Features section-->
+<section class="py-5 bg-light" id="features">
+    <div class="container px-5 my-5">
+
+        <!-- Título -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">Nuestros Servicios de Ingeniería</h2>
+            <p class="lead mb-0">
+                Soluciones eléctricas industriales con calidad, seguridad y eficiencia garantizada.
+            </p>
+        </div>
+
+        <!-- CAROUSEL SERVICIOS -->
+<div id="serviciosCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="row text-center">
+
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/medidor.jpg"
+                         class="img-fluid rounded shadow"
+                         style="height:220px; object-fit:cover;"
+                         alt="Medidores de Energía">
+                    <h5 class="fw-bold mt-3">Medidores de Energía Eléctrica</h5>
+                    <p class="text-muted">
+                        Instalación y parametrización de Medidores de Energía para monitoreo de parametros eléctricos, reducción del consumo y detección temprana de anomalias eléctricas en su planta.
+                    </p>
                 </div>
-            </section>
+
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/variador2.jpg"
+                         class="img-fluid rounded shadow"
+                         style="height:220px; object-fit:cover;"
+                         alt="Variadores de Frecuencia">
+                    <h5 class="fw-bold mt-3">Variadores de Frecuencia</h5>
+                    <p class="text-muted">
+                        Instalación y configuración de variadores de frecuencia para el control eficiente de motores eléctricos, lograr ahorro energético y mayor vida útil de los motores.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/automatizacion.jpg"
+                         class="img-fluid rounded shadow"
+                         style="height:220px; object-fit:cover;"
+                         alt="Automatización Industrial">
+                    <h5 class="fw-bold mt-3">Automatización Industrial</h5>
+                    <p class="text-muted">
+                        Implementación de sistemas de automatización para optimizar procesos productivos, reducir errores operativos y aumentar la rentabilidad de su industria.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="row text-center">
+
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/tableros.png"
+                         class="img-fluid rounded shadow"
+                         style="height:220px; object-fit:cover;"
+                         alt="Tableros Eléctricos">
+                    <h5 class="fw-bold mt-3">Tableros Eléctricos</h5>
+                    <p class="text-muted">
+                        Diseño y armado de tableros eléctricos industriales para distribución, arranque de motores, etc., bajo normativa, garantizando seguridad, orden y confiabilidad en la distribución eléctrica..
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/banco.jpeg"
+                         class="img-fluid rounded shadow"
+                         style="height:220px; object-fit:cover;"
+                         alt="Corrección de FP">
+                    <h5 class="fw-bold mt-3">Corrección de Factor de Potencia</h5>
+                    <p class="text-muted">
+                        Implementación de sistemas de compensación reactiva que mejoran el factor de potencia, reducen penalizaciones en la factura eléctrica y optimizan el uso de la energía.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/calculo.jpg"
+                         class="img-fluid rounded shadow"
+                         style="height:220px; object-fit:cover;"
+                         alt="Proyectos Eléctricos">
+                    <h5 class="fw-bold mt-3">Proyectos Eléctricos</h5>
+                    <p class="text-muted">
+                        Desarrollo integral de proyectos eléctricos desde el diseño hasta la ejecución, asegurando soluciones eficientes, seguras y adaptadas a las necesidades del cliente.
+                    </p>
+                </div>
+            </div>
+        </div>
+      
+       <!-- Slide 3 -->
+        <div class="carousel-item">
+            <div class="row text-center">
+
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/tierra.jpg"
+                         class="img-fluid rounded shadow"
+                         style="height:220px; object-fit:cover;"
+                         alt="Tableros Eléctricos">
+                    <h5 class="fw-bold mt-3">Sistemas de Puesta a tierra</h5>
+                    <p class="text-muted">
+                        Diseño e instalación de sistemas de puesta a tierra que garantizan la protección de personas y equipos eléctricos, reduciendo riesgos de descargas eléctricas y fallas operativas.</p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/pararrayos.jpg"
+                         class="img-fluid rounded shadow"
+                         style="height:220px; object-fit:cover;"
+                         alt="Mantenimiento Preventivo">
+                    <h5 class="fw-bold mt-3">Diseño e implementación de Sistemas de Pararrayos</h5>
+                    <p class="text-muted">
+                        Implementación de sistemas de protección contra descargas atmosféricas, protegiendo infraestructuras y equipos críticos, y evitando daños por sobretensiones..
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/auditoria.jpg"
+                         class="img-fluid rounded shadow"
+                         style="height:220px; object-fit:cover;"
+                         alt="Proyectos Eléctricos">
+                    <h5 class="fw-bold mt-3">Auditoria Enegética</h5>
+                    <p class="text-muted">
+                        Implementación de sistemas de compensación reactiva que mejoran el factor de potencia, reducen penalizaciones en la factura eléctrica y optimizan el uso de la energía
+                    </p>
+                </div>
+
+          </div>
+        </div>
+    </div>
+
+    <!-- FLECHAS -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+    </button>
+
+</div>
+
+
+        </div>
+
+    </div>
+</section>
+           <section class="py-5 bg-light">
+    <div class="container px-5">
+        <div class="row align-items-center">
+
+            <!-- TEXTO -->
+            <div class="col-lg-6" data-aos="fade-right">
+                <h2 class="fw-bold mb-3">¿Quiénes Somos?</h2>
+                <p class="text-muted mb-4">
+                    En <strong>Smart Company Bolivia</strong> brindamos soluciones integrales en ingeniería eléctrica, combinando experiencia técnica y tecnología para optimizar el rendimiento de sistemas eléctricos industriales y comerciales. 
+                    Nos especializamos en servicios eléctricos y comercialización de equipos, garantizando seguridad, eficiencia y cumplimiento de normativa.
+                </p>
+
+                <a href="about.html" class="btn btn-primary">
+                    Conocer más
+                </a>
+            </div>
+
+            <!-- IMAGEN -->
+            <div class="col-lg-6 text-center" data-aos="fade-left">
+                <img src="assets/img/nosotros.jpg"
+                     alt="Equipo Smart Company"
+                     class="img-fluid rounded-4 shadow">
+            </div>
+
+        </div>
+    </div>
+</section>
             <!-- Testimonial section-->
             <div class="py-5 bg-light">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-xl-7">
                             <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</div>
+                                <div class="fs-4 mb-4 fst-italic">"Nuestro equipo no solo instala o diseña sistemas eléctricos; analizamos riesgos, prevenimos fallas y protegemos la inversión de nuestros clientes desde el primer diagnóstico hasta la puesta en marcha. Operamos con transparencia, puntualidad y estándares profesionales que priorizan la seguridad de las personas, la continuidad operativa y la eficiencia energética. Cuando un cliente confía en nosotros, adquiere más que un servicio: obtiene compromiso, respaldo técnico y una ejecución segura que está a la altura de las exigencias industriales modernas."</div>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                    <img class="rounded-circle me-3" src="assets/img/Sergio.jfif" alt="CEO Smart Company" width="120" />
                                     <div class="fw-bold">
-                                        Tom Ato
+                                        Ing. Sergio Coca
                                         <span class="fw-bold text-primary mx-1">/</span>
-                                        CEO, Pomodoro
+                                        CEO, Smart Company
                                     </div>
                                 </div>
                             </div>
@@ -144,22 +272,151 @@
         </main>
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Smart Company Bolivia ></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
-                    </div>
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">
+                    © 2026 Smart Company Bolivia. Todos los derechos reservados.
                 </div>
             </div>
-        </footer>
+            <div class="col-auto">
+                <a class="link-light small" href="#">Privacidad</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#">Términos</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="contact.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+</footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 900,
+    once: true
+});
+</script>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<a href="https://wa.me/59170000000?text=Hola%20Smart%20Company%20Bolivia,%20quisiera%20información."
+   class="whatsapp-float"
+   target="_blank">
+   <i class="bi bi-whatsapp"></i>
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    color: white;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37,211,102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102, 0); }
+}
+
+
+</style>
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    // Guardar preferencia
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+// Mantener modo al recargar
+window.onload = function() {
+    if(localStorage.getItem("theme") === "dark"){
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
+
+<script>
+const heroData = [
+    {
+        title: "Servicios de Ingeniería Eléctrica",
+        text: "Diseño, automatización y mantenimiento eléctrico bajo estándares industriales.",
+        btn1Text: "Ver Servicios",
+        btn1Link: "services.html",
+        btn2Text: "Contactar",
+        btn2Link: "contact.html",
+        image: "assets/img/instalaciones-electricas.jpg"
+    },
+    {
+        title: "Venta de Material Eléctrico",
+        text: "Equipos certificados para control, protección y eficiencia energética.",
+        btn1Text: "Ver Productos",
+        btn1Link: "products.html",
+        btn2Text: "Cotizar",
+        btn2Link: "contact.html",
+        image: "assets/img/mate.jpg"
+    }
+];
+
+let index = 0;
+
+function updateHero() {
+    const hero = document.querySelector(".hero-section");
+    const content = document.querySelector(".hero-content");
+
+    content.classList.add("fade-out");
+
+    setTimeout(() => {
+        index = (index + 1) % heroData.length;
+        const data = heroData[index];
+
+        document.getElementById("heroTitle").textContent = data.title;
+        document.getElementById("heroText").textContent = data.text;
+
+        document.getElementById("heroBtn1").textContent = data.btn1Text;
+        document.getElementById("heroBtn1").href = data.btn1Link;
+
+        document.getElementById("heroBtn2").textContent = data.btn2Text;
+        document.getElementById("heroBtn2").href = data.btn2Link;
+
+        hero.style.backgroundImage = `url('${data.image}')`;
+
+        content.classList.remove("fade-out");
+
+    }, 400);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    updateHero();
+    setInterval(updateHero, 4000);
+});
+</script>
     </body>
 </html>

@@ -10868,3 +10868,352 @@ html {
     position: relative;
     z-index: 2;
 }
+
+/* Animación suave tarjetas productos */
+.product-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Tamaño uniforme para imágenes de productos */
+.product-card img {
+    height: 280px;              /* Altura fija */
+    width: 100%;
+    object-fit: cover;          /* Recorta sin deformar */
+}
+
+/* Mantiene tarjetas simétricas */
+.product-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.servicio-img {
+    width: 120px;
+    height: 120px;
+}
+
+.servicio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+.servicio-img img:hover {
+    transform: scale(1.08);
+}
+
+.modern-logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.logo-smart {
+    color: #2798F5;
+}
+
+.logo-company {
+    color: #ffffff;
+}
+
+.logo-bolivia {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: #adb5bd;
+    margin-left: 4px;
+    letter-spacing: 2px;
+}
+
+.modern-logo:hover {
+    transform: scale(1.03);
+}
+
+ .hero-contact {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('assets/img/co') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .social-card {
+            transition: 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .form-control, .form-select {
+            border-radius: 10px;
+        }
+
+        .btn-primary {
+            border-radius: 10px;
+        }
+
+     /* =========================
+   DARK MODE PROFESIONAL
+========================= */
+body.dark-mode {
+    background-color: #0f172a; /* azul oscuro elegante */
+    color: #e5e7eb;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+    background-color: #020617 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Logo */
+.modern-logo span {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo-smart { color: #38bdf8; }
+.logo-company { color: #ffffff; }
+.logo-bolivia { color: #94a3b8; }
+
+/* HERO */
+body.dark-mode .hero-section::before {
+    background: rgba(0,0,0,0.75);
+}
+
+/* Secciones */
+body.dark-mode .bg-light {
+    background-color: #020617 !important;
+}
+
+/* Cards */
+body.dark-mode .card {
+    background: linear-gradient(145deg, #020617, #0f172a);
+    border: 1px solid rgba(255,255,255,0.05);
+    color: #e5e7eb;
+    border-radius: 15px;
+}
+
+/* Hover elegante */
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* Títulos */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #f8fafc;
+}
+
+/* Botones */
+body.dark-mode .btn-success {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    border: none;
+}
+
+body.dark-mode .btn-success:hover {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #020617 !important;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Texto secundario */
+body.dark-mode .text-muted {
+    color: #94a3b8 !important;
+}
+
+/* BOTÓN DARK MODE */
+.dark-toggle {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.dark-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   FORMULARIO DARK MODE PRO
+========================= */
+
+/* INPUTS */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #0f172a; /* fondo azul oscuro */
+    border: 1px solid #334155;
+    color: #f8fafc; /* TEXTO CLARO */
+}
+
+/* PLACEHOLDER */
+body.dark-mode .form-control::placeholder {
+    color: #94a3b8; /* gris claro visible */
+}
+
+/* LABELS */
+body.dark-mode .form-label {
+    color: #e2e8f0; /* blanco suave */
+    font-weight: 500;
+}
+
+/* FOCUS */
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background-color: #0f172a;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.3);
+    color: #ffffff;
+}
+
+/* TEXTAREA */
+body.dark-mode textarea.form-control {
+    color: #f8fafc;
+}
+
+/* BOTÓN */
+body.dark-mode .btn-primary {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+body.dark-mode .btn-primary:hover {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+/* CONTENEDOR */
+body.dark-mode .bg-light {
+    background-color: #020617 !important;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Mejora de textos en secciones */
+body.dark-mode .text-muted {
+    color: #cbd5f5 !important; /* gris claro elegante */
+}
+
+/* Títulos */
+body.dark-mode h2 {
+    color: #f8fafc;
+}
+
+/* Secciones generales */
+body.dark-mode section {
+    color: #e5e7eb;
+}
+.hero-section {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #0d1117, #111827);
+}
+
+.hero-img {
+    transition: all 0.8s ease;
+    transform: translateX(0);
+}
+
+.hero-content {
+    transition: all 0.8s ease;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-image 1s ease-in-out;
+}
+
+/* overlay oscuro */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+}
+
+/* contenido */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* TITULO GRANDE PRO */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* TEXTO */
+.hero-text {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.85);
+}
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+    .hero-title {
+        font-size: 3.8rem;
+    }
+    .hero-text {
+        font-size: 1.4rem;
+    }
+}
+
+/* animación */
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}

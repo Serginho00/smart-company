@@ -1,133 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Smart Company Bolivia</title>
+        <meta name="description" content="Smart Company Bolivia - Ingeniería eléctrica industrial, automatización y eficiencia energética." />
+        <meta name="author" content="Sergio Coca" />
+        <title>Nosotros | Smart Company Bolivia</title>
+
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/iconoSC.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- AOS Animations CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+         <style>
+.hero-section {
+    position: relative;
+    height: 40vh;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+</style>
     </head>
+
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
+
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand fw-bold" href="index.html">SMART COMPANY BOLIVIA</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <a class="navbar-brand modern-logo" href="index.html">
+                   <span class="logo-smart">SMART</span>
+                   <span class="logo-company">COMPANY</span>
+                   <span class="logo-bolivia">BOLIVIA</span>
+                     </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="about.html">Nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li>
                             <li class="nav-item"><a class="nav-link" href="services.html">Proyectos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Articulos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Artículos</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+
+                            <!-- BOTÓN DARK MODE -->
+    <li class="nav-item ms-3">
+        <button onclick="toggleDarkMode()" class="btn btn-outline-light btn-sm dark-toggle">
+            <i class="bi bi-moon"></i>
+        </button>
+    </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+
             <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-xxl-6">
-                            <div class="text-center my-5">
-                                <h1 class="fw-bolder mb-3">Our mission is to make building websites easier for everyone.</h1>
-                                <p class="lead fw-normal text-muted mb-4">Start Bootstrap was built on the idea that quality, functional website templates and themes should be available to everyone. Use our open source, free products, or support us by purchasing one of our premium products or services.</p>
-                                <a class="btn btn-primary btn-lg" href="#scroll-target">Read our story</a>
-                            </div>
-                        </div>
+          
+<!-- HERO NOSOTROS -->
+<section class="hero-section"
+         style="background: url('assets/img/sc2.jpg') center center/cover fixed no-repeat;">
+    <div class="container" data-aos="fade-up">
+         <h1 class="fw-bold">Sobre Nosotros</h1>
+        <p class="lead">Soluciones integrales en ingeniería eléctrica y suministro de equipos</p>
+    </div>
+</section>
+
+<!-- SECCIÓN NOSOTROS -->
+<section class="py-5 bg-light" id="nosotros">
+    <div class="container px-5">
+
+
+        <!-- QUIÉNES SOMOS -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <img src="assets/img/ing.jpg" class="img-fluid rounded-4 shadow" alt="Equipo eléctrico">
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left">
+                <h3 class="fw-bold mb-3">¿Quiénes somos?</h3>
+                <p class="text-muted">
+                    Somos una empresa especializada en ingeniería eléctrica y electrónica que integra 
+                    <strong>servicios técnicos y comercializa equipos eléctricos de buena calidad y con garantia</strong>, 
+                    ofreciendo soluciones completas para el sector industrial, comercial y residencial.
+                </p>
+                <p class="text-muted">
+                    Brindamos desde el diseño e instalación de sistemas eléctricos hasta la venta 
+                    de materiales y equipos certificados, permitiendo a nuestros clientes optimizar 
+                    sus proyectos con un solo proveedor confiable.
+                </p>
+            </div>
+        </div>
+
+        <!-- MISIÓN - VISIÓN -->
+        <div class="row g-4 mb-5">
+
+            <!-- MISIÓN -->
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card border-0 shadow h-100 p-4 rounded-4">
+                    <div class="text-primary mb-3">
+                        <i class="bi bi-bullseye fs-1"></i>
                     </div>
-                </div>
-            </header>
-            <!-- About section one-->
-            <section class="py-5 bg-light" id="scroll-target">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-                        <div class="col-lg-6">
-                            <h2 class="fw-bolder">Our founding</h2>
-                            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About section two-->
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-                        <div class="col-lg-6">
-                            <h2 class="fw-bolder">Growth &amp; beyond</h2>
-                            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Team members section-->
-            <section class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="fw-bolder">Our team</h2>
-                        <p class="lead fw-normal text-muted mb-5">Dedicated to quality and your success</p>
-                    </div>
-                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5 mb-5 mb-xl-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                <div class="fst-italic text-muted">Founder &amp; CEO</div>
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-xl-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Arden Vasek</h5>
-                                <div class="fst-italic text-muted">CFO</div>
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-sm-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Toribio Nerthus</h5>
-                                <div class="fst-italic text-muted">Operations Manager</div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Malvina Cilla</h5>
-                                <div class="fst-italic text-muted">CTO</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
-                    </div>
+                    <h4 class="fw-bold">Misión</h4>
+                    <p class="text-muted mb-0">
+                        Proporcionar soluciones integrales en ingeniería eléctrica e ingenieria electrónica mediante servicios 
+                        especializados y suministro de equipos eléctricos de alta calidad, garantizando 
+                        seguridad, eficiencia y confiabilidad en cada proyecto.
+                    </p>
                 </div>
             </div>
-        </footer>
+
+            <!-- VISIÓN -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card border-0 shadow h-100 p-4 rounded-4">
+                    <div class="text-primary mb-3">
+                        <i class="bi bi-eye fs-1"></i>
+                    </div>
+                    <h4 class="fw-bold">Visión</h4>
+                    <p class="text-muted mb-0">
+                        Ser una empresa líder en Bolivia en servicios eléctricos y comercialización 
+                        de equipos, reconocida por su innovación, calidad técnica y capacidad de 
+                        ofrecer soluciones completas que generen valor y confianza.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- VALORES -->
+        <div class="text-center mb-4" data-aos="fade-up">
+            <h3 class="fw-bold">Nuestros Valores</h3>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card border-0 shadow p-4 text-center h-100 rounded-4">
+                    <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Seguridad</h5>
+                    <p class="text-muted mb-0">Protegemos a las personas y equipos en cada proyecto.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card border-0 shadow p-4 text-center h-100 rounded-4">
+                    <i class="bi bi-check-circle fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Compromiso</h5>
+                    <p class="text-muted mb-0">Cumplimos con responsabilidad y puntualidad.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card border-0 shadow p-4 text-center h-100 rounded-4">
+                    <i class="bi bi-award fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Calidad</h5>
+                    <p class="text-muted mb-0">Servicios y equipos eléctricos certificados.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card border-0 shadow p-4 text-center h-100 rounded-4">
+                    <i class="bi bi-lightning-charge fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Innovación</h5>
+                    <p class="text-muted mb-0">Aplicamos tecnología moderna en cada solución.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card border-0 shadow p-4 text-center h-100 rounded-4">
+                    <i class="bi bi-eye fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Transparencia</h5>
+                    <p class="text-muted mb-0">Relaciones honestas y de confianza.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card border-0 shadow p-4 text-center h-100 rounded-4">
+                    <i class="bi bi-gear fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Soluciones Integrales</h5>
+                    <p class="text-muted mb-0">Servicio + equipos en un solo proveedor.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- POR QUÉ ELEGIRNOS -->
+        <div class="mt-5 text-center" data-aos="fade-up">
+            <h3 class="fw-bold mb-4">¿Por qué elegirnos?</h3>
+        </div>
+
+        <div class="row text-center g-4">
+
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="p-3">
+                    <i class="bi bi-box-seam fs-1 text-primary"></i>
+                    <p class="mt-2 mb-0">Soluciones completas</p>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="p-3">
+                    <i class="bi bi-graph-up fs-1 text-primary"></i>
+                    <p class="mt-2 mb-0">Materiales de calidad</p>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="p-3">
+                    <i class="bi bi-tools fs-1 text-primary"></i>
+                    <p class="mt-2 mb-0">Asesoría técnica</p>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-3">
+                    <i class="bi bi-check2-square fs-1 text-primary"></i>
+                    <p class="mt-2 mb-0">Normas y seguridad</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Formulario de Contacto -->
+<section class="py-5 bg-ligth">
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bolder">¿Quieres contactarnos?</h2>
+            <p class="lead text-muted mb-0">
+                Envía un mensaje y nuestro equipo te responderá rápidamente.
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+
+                <form action="enviar.php" method="POST" class="p-4 rounded shadow-sm">
+
+    <div class="mb-3">
+        <label class="form-label">Nombre completo</label>
+        <input type="text" name="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Correo electrónico</label>
+        <input type="email" name="email" class="form-control" placeholder="correo@ejemplo.com" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Teléfono</label>
+        <input type="tel" name="telefono" class="form-control" placeholder="+591 70000000">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Mensaje</label>
+        <textarea name="mensaje" rows="5" class="form-control" placeholder="Escribe tu consulta..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100 fw-bold">
+        Enviar Consulta
+    </button>
+
+</form>
+
+            </div>
+        </div>
+    </div>
+</section>
+            
+
+        </main>
+
+         <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">
+                    © 2026 Smart Company Bolivia. Todos los derechos reservados.
+                </div>
+            </div>
+            <div class="col-auto">
+                <a class="link-light small" href="#">Privacidad</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#">Términos</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="contact.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- AOS Animations JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init({
+        duration: 800,
+        once: true
+        });
+      </script>
+
+      <!-- BOTÓN FLOTANTE WHATSAPP -->
+<a href="https://wa.me/59170000000?text=Hola%20Smart%20Company%20Bolivia,%20quisiera%20información."
+   class="whatsapp-float"
+   target="_blank">
+   <i class="bi bi-whatsapp"></i>
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    color: white;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37,211,102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102, 0); }
+}
+</style>
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    // Guardar preferencia
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+// Mantener modo al recargar
+window.onload = function() {
+    if(localStorage.getItem("theme") === "dark"){
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
     </body>
 </html>
